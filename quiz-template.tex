@@ -1,0 +1,184 @@
+%% exam_paper_template.tex
+%% by Lawrence Ong
+%% Created: 13/09/2019
+%% Modified: 16/10/2019
+%% 
+%% This is a template for final examination papers
+%% created according to the specifications required
+%% by the University of Newcastle
+
+
+\documentclass[a4paper,12pt]{article}
+
+% ==========
+% Insert semester, year, and module name here
+\newcommand{\semester}{2} % semester
+\newcommand{\examyear}{2020} % year
+\newcommand{\subjectname}{Wireless Communication} % subject name
+\newcommand{\quiznumber}{1} % quiz number
+\newcommand{\modulecode}{ELEC4550/ELEC6550} % subject code
+% ==========
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[T1]{fontenc}
+\usepackage{amssymb,amsmath}
+\usepackage{bm}
+\usepackage{lastpage}
+\usepackage{color}
+
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\fontsize{10}{0} \selectfont Semester~\semester,~\examyear}
+\fancyhead[R]{\fontsize{10}{0} \selectfont \hfill \modulecode~\subjectname}
+\fancyfoot[C]{\fontsize{10}{12} \selectfont Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\voffset}{-1.2cm} % -1in + 1.25cm = -1.29cm
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{8.85pt}
+\setlength{\headsep}{1.12cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\hoffset}{0.65cm} %-1in + 3.25cm = 0.71cm
+\setlength{\textwidth}{15.25cm}
+\setlength{\textheight}{24.5cm}
+\setlength{\footskip}{1.12cm}
+\fancyheadoffset[LO,RE]{1.5cm} %move start of header to the left
+\fancyheadoffset[RO,LE]{1cm} %move end of header to the right
+
+\setlength\parindent{0pt}
+
+\clearpage
+% Start counting from page 2. Cover page to be manually inserted.
+%\setcounter{page}{2}
+
+\newcounter{question}[section]
+\newenvironment{question}[2][]
+{\refstepcounter{question} %\par\medskip
+  \textbf{Question~\thequestion. \hfill (#1 marks)}\newline #2}{\bigskip\bigskip\bigskip}
+
+% Example of usage
+% Note: The first argument in the "question" environment
+% is the total mark for that question
+% ===============
+% %Make sure that there is no space before the % sign below
+% \begin{question}[10]\label{q2}%
+%   % Include \vspace{-1.5\topsep} if there is no text preceeding enumerate
+%   \vspace*{-1.5\topsep}
+%   \begin{enumerate}[(a)]
+%   \item XXX
+%     \begin{enumerate}[(i)]
+%     \item Question~\ref{q2}
+%     \end{enumerate}
+%   \item YYY
+%   \end{enumerate}
+% \end{question}
+% ===============
+ 
+
+\begin{document}
+Student Number: \rule{5cm}{0.15mm}
+
+{\ }
+
+Student Name: \rule{5.5cm}{0.15mm}
+
+{\ }
+
+{\ }
+
+\begin{center}
+  {\bfseries \large
+    School of Electrical Engineering \& Computing
+
+    {\ }
+
+    QUIZ~\quiznumber
+
+    {\ }
+    
+    \textnormal{Semester~\semester,~\examyear}
+
+    {\ }
+    
+    \modulecode~\subjectname}
+\end{center}
+
+{\ }
+
+\hrulefill
+
+\begin{doublespace}
+  Quiz Duration: 50 minutes
+  
+  This quiz has \underline{NINE~(9)} questions.
+  
+  Total marks: 100 marks
+  
+  \textbf{Quiz Conditions:}
+  
+  This is an OPEN-BOOK quiz.
+  
+  \textbf{Special Instructions:}
+  
+  Answer \underline{ALL} questions.
+  
+  You must show workings in your answers.
+\end{doublespace}
+
+\hrulefill
+
+\newpage
+
+%Make sure that there is no space before the % sign below
+\begin{question}[10]\label{q1}% 
+  XXX
+
+  YYYy
+  
+  \begin{itemize}[\large $\square$]
+  \item XXX
+    \begin{enumerate}[(i)]
+    \item Question~\ref{q1}
+    \end{enumerate}
+  \end{itemize}
+\end{question}
+
+\begin{question}[10]\label{q2}%
+  % Include \vspace{-1.5\topsep} if there is no parapgraph preceeding enumerate
+  \vspace*{-1.5\topsep}
+  \begin{enumerate}[(a)]
+  \item XXX
+    \begin{enumerate}[(i)]
+    \item Question~\ref{q2}
+    \end{enumerate}
+  \item YYY
+  \end{enumerate}
+\end{question}
+
+
+      \newpage
+
+
+\begin{question}[20]\label{q3}%
+  XXX
+  \begin{enumerate}[(a)]
+  \item XXX
+    \begin{enumerate}[(i)]
+    \item Question~\ref{q3}
+    \end{enumerate}
+  \end{enumerate}
+\end{question}
+
+\begin{center}
+  \textbf{END OF QUIZ}
+\end{center}
+
+\end{document}
