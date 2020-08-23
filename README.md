@@ -1,2 +1,1 @@
-# quiz_paper_uon
- A template for quiz papers
+This is a template for quiz papers for the University of Newcastle
