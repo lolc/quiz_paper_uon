@@ -1,11 +1,9 @@
-%% exam_paper_template.tex
+%% quiz-template.tex
 %% by Lawrence Ong
-%% Created: 13/09/2019
-%% Modified: 16/10/2019
+%% Created: 23/08/2020
+%% Modified: 27/09/2020
 %% 
-%% This is a template for final examination papers
-%% created according to the specifications required
-%% by the University of Newcastle
+%% This is a template for quizzes
 
 
 \documentclass[a4paper,12pt]{article}
@@ -14,7 +12,7 @@
 % Insert semester, year, and module name here
 \newcommand{\semester}{2} % semester
 \newcommand{\examyear}{2020} % year
-\newcommand{\subjectname}{Wireless Communication} % subject name
+\newcommand{\subjectname}{Wireless Communications} % subject name
 \newcommand{\quiznumber}{1} % quiz number
 \newcommand{\modulecode}{ELEC4550/ELEC6550} % subject code
 % ==========
@@ -55,10 +53,6 @@
 
 \setlength\parindent{0pt}
 
-\clearpage
-% Start counting from page 2. Cover page to be manually inserted.
-%\setcounter{page}{2}
-
 \newcounter{question}[section]
 \newenvironment{question}[2][]
 {\refstepcounter{question} %\par\medskip
@@ -68,7 +62,7 @@
 % Note: The first argument in the "question" environment
 % is the total mark for that question
 % ===============
-% %Make sure that there is no space before the % sign below
+% %% Make sure that there is no space before the % sign below
 % \begin{question}[10]\label{q2}%
 %   % Include \vspace{-1.5\topsep} if there is no text preceeding enumerate
 %   \vspace*{-1.5\topsep}
